@@ -44,7 +44,8 @@ setuptools.setup(
     long_description_content_type='text/markdown',
     url='https://github.com/kijoongkwon99/DMTTS',
     install_requires=INSTALL_REQUIRES,
-    packages=setuptools.find_packages(),
+    packages=setuptools.find_packages(where='src'),
+    package_dir={'': 'src'},
     package_data={
         'dmtts.model.text': [
             'opencpop-strict.txt', 'wiktionary-23-7-2022-clean.tsv', 'cmudict.rep', 'cmudict_cache.pickle'
