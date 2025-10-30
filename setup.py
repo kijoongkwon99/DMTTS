@@ -44,7 +44,7 @@ setuptools.setup(
     long_description_content_type='text/markdown',
     url='https://github.com/kijoongkwon99/DMTTS',
     install_requires=INSTALL_REQUIRES,
-    packages=setuptools.find_packages(where='src'),
+    packages=setuptools.find_packages(where='src', include=['dmtts*']),
     package_dir={'': 'src'},
     package_data={
         'dmtts.model.text': [
