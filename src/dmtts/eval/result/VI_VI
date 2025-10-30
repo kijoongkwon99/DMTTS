@@ -1,0 +1,23 @@
+Steps : 613000
+UTMOS      : 2.5893381845951082
+
+Steps : 613000
+Total 100 samples
+WER      : 8.242%
+
+Total 100 samples
+CER      : 2.59%
+
+Steps : 613000
+UTMOS      : 2.5893381845951082
+
+Ground Truth
+UTMOS      : 2.2726386117935182
+
+Ground Truth
+Total 100 samples
+WER      : 12.735%
+
+Total 100 samples
+CER      : 3.874%
+

@@ -1,0 +1,34 @@
+Ground Truth
+UTMOS      : 3.725796184539795
+
+Ground Truth
+Total 100 samples
+WER      : 9.261%
+
+Total 100 samples
+CER      : 3.838%
+
+Steps : 250000
+UTMOS      : 3.5226779341697694
+
+Steps : 250000
+Total 100 samples
+WER      : 33.733%
+
+Total 100 samples
+CER      : 10.557%
+
+Steps : 250000
+Total 100 samples
+WER      : 36.189%
+
+Total 100 samples
+CER      : 11.566%
+
+Steps : 250000
+Total 100 samples
+WER      : 36.189%
+
+Total 100 samples
+CER      : 11.566%
+

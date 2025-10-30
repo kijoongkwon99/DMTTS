@@ -1,0 +1,43 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+
+# Checkpoints / Data
+#ckpts/
+#data/
+*.pt
+*.pth
+*.bin
+*.wav
+*.mp3
+*.npy
+*.npz
+*.tfevents*
+metadata.list
+train.list
+
+# Virtual environments
+env/
+venv/
+.dmtts/
+*.egg-info/
+
+# System / Editor
+.DS_Store
+.vscode/
+.ipynb_checkpoints/
+
+# Others
+#*.pickle
+#*.rep
+#*.tsv
+
+# Training logs
+logs/
+**/logs/
+
+# Ignore local upload scripts
+upload_hf.py
