@@ -14,7 +14,7 @@ LANG_TO_HF_REPO_ID = {
 }
 
 def load_or_download_config(locale, use_hf=True, config_path=None):
-    print("LOAD_OR_DOWNLOAD_CONFIG")
+    #print("LOAD_OR_DOWNLOAD_CONFIG")
     if config_path is None:
         language = locale.split('-')[0].upper()
         if use_hf:
@@ -24,7 +24,7 @@ def load_or_download_config(locale, use_hf=True, config_path=None):
     return utils.get_hparams_from_file(config_path)
 
 def load_or_download_model(locale, device, use_hf=True, ckpt_path=None):
-    print("LOAD_OF_DOWLOAD_MODEL")
+    #print("LOAD_OF_DOWLOAD_MODEL")
     if ckpt_path is None:
         language = locale.split('-')[0].upper()
         if use_hf:
