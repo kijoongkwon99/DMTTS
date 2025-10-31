@@ -36,3 +36,4 @@ faster-whisper
 zhon
 python-Levenshtein==0.23.0
 #jiwer==2.5.1
+pythainlp
