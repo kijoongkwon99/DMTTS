@@ -29,10 +29,6 @@ class TextEncoder(nn.Module):
         lang_list=None,
     ):
         super().__init__()
-        #lang_list= ["VI"] ######################### 나중에 input으로 받게끔 해야할듯
-        
-        print(f"lang_list : {lang_list}")
-
         if num_languages is None:
             from dmtts.model.text.symbols import get_language_id
             _, num_languages = get_language_id(lang_list)
