@@ -15,7 +15,6 @@ Each language is currently represented by **a single speaker**.
 ```bash
 conda create -n dmtts python=3.11
 conda activate dmtts
-python -m unidic download
 ```
 
 ### Simple Installation
@@ -84,6 +83,7 @@ for language in Languages:
 git clone https://github.com/kijoongkwon99/DMTTS.git
 cd DMTTS
 pip install -e .
+python -m unidic download
 ```
 
 ---
@@ -177,7 +177,7 @@ DMTTS/
         ├── download_utils.py
         ├── hparam_utils.py
         ├── infer_utils.py
-        └──  eval_utils.py
+        └── eval_utils.py
 
 ```
 
