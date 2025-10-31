@@ -3,11 +3,6 @@ import unicodedata
 
 from transformers import AutoTokenizer
 from dmtts.model.text.kr_normalizer import N2gk, N2gkPlus
-
-
-
-#from num2words import num2words
-#from melo.text.ko_dictionary import english_dictionary, etc_dictionary
 from anyascii import anyascii
 from jamo import hangul_to_jamo
 
@@ -40,20 +35,13 @@ def korean_text_to_phonemes(text, character: str = "hangeul") -> str:
 
     if character == "english":
         from anyascii import anyascii
-        #print(f"raw_text        :{text}")
         text = normalize(text)
-        #print(f"normalized_text :{text}")
         text = g2p_kr(text)
-        #print(f"g2p_kr_text     :{text}")
         text = anyascii(text)
-        #print(f"anyascii_text   :{text}")
         return text
 
-    #print(f"text:   {text}")
     text = normalize(text)
-    #print(f"norm:   {text}")
     text = g2p_kr(text)
-    #print(f"g2p :   {text}")
     text = list(hangul_to_jamo(text))  # '하늘' --> ['ᄒ', 'ᅡ', 'ᄂ', 'ᅳ', 'ᆯ']
     return "".join(text)
 
@@ -81,7 +69,6 @@ def g2p(norm_text, add_space=False, delimit_word=True):
                 continue
             phonemes = korean_text_to_phonemes(word)
             phs += list(phonemes)
-            # 마지막 단어가 아닐 때만 공백 추가
             if add_space:
                 if idx < len(words) - 1:
                     phs.append("SP")
@@ -89,7 +76,6 @@ def g2p(norm_text, add_space=False, delimit_word=True):
         phonemes = korean_text_to_phonemes(norm_text)
         phonemes = re.sub(r'\s+', '', phonemes)
         phs += list(phonemes)
-    print(f"phonemes:   {''.join(phs)}")  
     phones = ["_"] + phs + ["_"]
     tones = [0 for i in phones]
     return phones, tones 
