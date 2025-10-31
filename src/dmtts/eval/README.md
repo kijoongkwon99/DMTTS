@@ -21,5 +21,6 @@ Metrics: **CER**, **WER**, and **UTMOS**.
 Use `python eval_metric_batch.py` to evaluate generated results.
 The evaluation results are stored under the `result/` directory.
 
+---
 In addition to loading the metalist required for evaluation,
 details of each metric can be found in `dmtts/utils/eval_utils.py.`
